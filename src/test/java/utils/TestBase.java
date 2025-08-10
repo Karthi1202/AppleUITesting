@@ -17,6 +17,7 @@ public class TestBase extends ExcelReader{
 		
 		{
 			//driver = new EdgeDriver();
+			
 			driver = new ChromeDriver();
 			driver.get("https://www.apple.com/in/");
 			driver.manage().window().maximize();

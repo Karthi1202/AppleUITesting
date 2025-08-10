@@ -15,9 +15,9 @@ public class Homeobject {
 		this.driver = driver;
 	}
 
-	public void find(String string) 
+	public void find(String string) throws InterruptedException 
 	{
-		
+		Thread.sleep(5000);
 		WebElement product = driver.findElement(By.xpath("//a[@data-globalnav-item-name='"+string+"']"));
 		product.click();
 	}

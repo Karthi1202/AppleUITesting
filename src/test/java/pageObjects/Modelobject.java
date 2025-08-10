@@ -11,8 +11,8 @@ public class Modelobject {
 	
 	WebDriver driver;
 	
-	By Buytop = By.className("ac-ln-button");
-	By BuyBottom = By.className("detail-ctas-link");
+	By option2 = By.className("ac-ln-button");
+	By option1 = By.className("detail-ctas-link");
 	
 	
 	public Modelobject(WebDriver driver) {
@@ -24,14 +24,32 @@ public class Modelobject {
 				+ "[@data-analytics-title='"+string2+"']"));
 		model.click();
 		
-		if(driver.findElement(Buytop).isEnabled()) {
-			
-			driver.findElement(Buytop).click();
-			
+		
+		if(IsElementpresent(option1)) {
+			driver.findElement(option1).click();
 		}
 		else {
-			driver.findElement(BuyBottom).click();
+			driver.findElement(option2).click();
 		}
+		
+	}
+	
+	
+	
+	
+	
+	public boolean IsElementpresent(By FindBy) {
+		
+		try {
+			WebElement find = driver.findElement(FindBy);
+			return true;
+		}
+		catch(org.openqa.selenium.NoSuchElementException exception){
+			return false;
+		}
+		
+		
+		
 	}
 	
 	

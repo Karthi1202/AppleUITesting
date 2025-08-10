@@ -24,10 +24,11 @@ public class Homepage extends ExcelReader {
 
 	
 	@Given("User is on the Homepage and Click the categorey of the gagets")
-	public void user_is_on_the_homepage_and_click_the_categorey_of_the_gagets() {
+	public void user_is_on_the_homepage_and_click_the_categorey_of_the_gagets() throws InterruptedException {
 	   
 		Homeobject homeobj = testContextSetup.pageObjectManager.getHomepage();
 		homeobj.find(ExcelData.get("Product"));
+		
 		
 	}
 	
