@@ -16,7 +16,6 @@ public class TestContextSetup {
 		
 		testBase = new TestBase();
 		pageObjectManager = new PageObjectManager(testBase.getDriver());
-		
 	}
 
 }

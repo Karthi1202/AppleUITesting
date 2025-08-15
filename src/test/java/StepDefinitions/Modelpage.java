@@ -18,7 +18,7 @@ public class Modelpage extends ExcelReader {
 		this.testContextsetup = testContextsetup;
 		ExcelData=ReadData();
 	}
-	
+
 	@Given("Select the Model of the gagets")
 	public void select_the_model_of_the_gagets() {
 	    // Write code here that turns the phrase above into concrete actions

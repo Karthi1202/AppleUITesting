@@ -6,8 +6,9 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class TestBase extends ExcelReader{
+public class TestBase{
 
 	public WebDriver driver;
 	
@@ -26,4 +27,6 @@ public class TestBase extends ExcelReader{
 		}
 		return driver;	
 	}
+	
+	
 }

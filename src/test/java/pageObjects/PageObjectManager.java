@@ -9,6 +9,7 @@ public class PageObjectManager {
 	public WebDriver driver;
 	public Homeobject homepageobj;
 	public Modelobject modelobj;
+	public Detailsobject detailobj;
 	
 	public PageObjectManager(WebDriver driver) {
 		
@@ -26,6 +27,11 @@ public class PageObjectManager {
 		
 		modelobj = new Modelobject(driver);
 		return modelobj;
+	}
+	
+	public Detailsobject getdetailpage() {
+		detailobj = new Detailsobject(driver);
+		return detailobj;
 	}
 
 }

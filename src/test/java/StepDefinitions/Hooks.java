@@ -21,11 +21,11 @@ public class Hooks {
 		this.testContextSetup = testContextSetup;
 	}
 	
-	@After
+	/*@After
 	public void AfterScenario() throws IOException {
 		
 		testContextSetup.testBase.getDriver().quit();
-	}
+	}*/
 	
 	@AfterStep
 	public void AddScreenshot(Scenario scenario) throws IOException {

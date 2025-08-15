@@ -7,7 +7,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class Modelobject {
+import StepDefinitions.Modelpage;
+import utils.Generics;
+
+public class Modelobject extends Generics{
 	
 	WebDriver driver;
 	
@@ -15,8 +18,13 @@ public class Modelobject {
 	By option1 = By.className("detail-ctas-link");
 	
 	
-	public Modelobject(WebDriver driver) {
+	public Modelobject(WebDriver driver)
+	
+	{
+		
+		super(driver);
 		this.driver = driver;
+		
 	}
 
 	public void select(String string2) {
@@ -33,25 +41,5 @@ public class Modelobject {
 		}
 		
 	}
-	
-	
-	
-	
-	
-	public boolean IsElementpresent(By FindBy) {
-		
-		try {
-			WebElement find = driver.findElement(FindBy);
-			return true;
-		}
-		catch(org.openqa.selenium.NoSuchElementException exception){
-			return false;
-		}
-		
-		
-		
-	}
-	
-	
 
 }
