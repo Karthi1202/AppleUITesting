@@ -17,7 +17,7 @@ import utils.Generics;
 
 public class Detailsobject extends Generics{
 	
-	public WebDriver driver;
+	WebDriver driver;
 	
 	
 	By Button = By.className("button-block");
