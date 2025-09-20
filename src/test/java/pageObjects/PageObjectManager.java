@@ -6,10 +6,10 @@ import StepDefinitions.Homepage;
 
 public class PageObjectManager {
 	
-	public WebDriver driver;
-	public Homeobject homepageobj;
-	public Modelobject modelobj;
-	public Detailsobject detailobj;
+	WebDriver driver;
+	private Homeobject homepageobj;
+	private Modelobject modelobj;
+	private Detailsobject detailobj;
 	
 	public PageObjectManager(WebDriver driver) {
 		
